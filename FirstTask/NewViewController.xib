@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHN-mu-b2O">
-                            <rect key="frame" x="100" y="-1" width="193" height="55"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
                             <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="55" id="v8h-tU-1qU"/>
@@ -32,20 +32,20 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNs-Sl-k6J" customClass="CustomView" customModule="FirstTask" customModuleProvider="target">
-                            <rect key="frame" x="20" y="64" width="353" height="333"/>
+                            <rect key="frame" x="20" y="65" width="353" height="332"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oHN-mu-b2O" secondAttribute="trailing" id="0gp-RE-J2G"/>
                         <constraint firstItem="VNs-Sl-k6J" firstAttribute="centerX" secondItem="cKk-h9-AJe" secondAttribute="centerX" id="56o-vM-PLO"/>
-                        <constraint firstItem="VNs-Sl-k6J" firstAttribute="top" secondItem="cKk-h9-AJe" secondAttribute="top" constant="64" id="83g-i7-9uj"/>
-                        <constraint firstItem="oHN-mu-b2O" firstAttribute="leading" secondItem="cKk-h9-AJe" secondAttribute="leading" constant="100" id="OBd-JJ-r7x"/>
                         <constraint firstItem="VNs-Sl-k6J" firstAttribute="leading" secondItem="cKk-h9-AJe" secondAttribute="leading" constant="20" id="TYq-62-Pbc"/>
                         <constraint firstItem="VNs-Sl-k6J" firstAttribute="top" secondItem="oHN-mu-b2O" secondAttribute="bottom" constant="10" id="Tic-Zd-P6n"/>
                         <constraint firstAttribute="bottom" secondItem="VNs-Sl-k6J" secondAttribute="bottom" constant="362" id="WXN-Ji-4rF"/>
-                        <constraint firstAttribute="trailing" secondItem="oHN-mu-b2O" secondAttribute="trailing" constant="100" id="XAM-5h-WIV"/>
+                        <constraint firstItem="oHN-mu-b2O" firstAttribute="leading" secondItem="cKk-h9-AJe" secondAttribute="leading" id="XQY-Ng-Qc3"/>
                         <constraint firstAttribute="trailing" secondItem="VNs-Sl-k6J" secondAttribute="trailing" constant="20" id="epV-x1-dtE"/>
+                        <constraint firstItem="oHN-mu-b2O" firstAttribute="top" secondItem="cKk-h9-AJe" secondAttribute="top" id="wI9-Ou-eID"/>
                     </constraints>
                 </view>
             </subviews>

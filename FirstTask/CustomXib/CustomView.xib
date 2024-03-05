@@ -31,6 +31,11 @@
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="newButton:" destination="-1" eventType="touchUpInside" id="6YX-TD-G3X"/>
                     </connections>
@@ -47,6 +52,11 @@
                 <constraint firstItem="8R0-cR-ayH" firstAttribute="top" secondItem="SE4-oe-Nxa" secondAttribute="bottom" constant="70" id="l1l-oQ-Kil"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SE4-oe-Nxa" secondAttribute="trailing" constant="40" id="lSG-pp-RXn"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="46.564885496183201" y="19.718309859154932"/>
         </view>
     </objects>
