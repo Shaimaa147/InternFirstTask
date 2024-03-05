@@ -15,13 +15,11 @@ class CustomView: UIView {
     @IBOutlet weak var secondLAbel: UILabel!
     @IBAction func newButton(_ sender: UIButton) {
         print("Button pressed")
-        var currentText = secondLAbel.text ==
-        "Press to change" ? (receivedText ?? "text Changed") : "Press to change"
+        var currentText = (secondLAbel.text == "Press to change") ?
+        (receivedText ?? "text Changed") : "Press to change"
         secondLAbel.text = currentText
         
     }
-    
-
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -39,19 +37,12 @@ class CustomView: UIView {
 
         guard let view = nib.instantiate(withOwner: self, options: nil).first as?
                             UIView else {fatalError("Unable to convert nib")}
-
+        
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-
         addSubview(view)
-
     }
-        
-//    func buttonAction() {
-//        print("Button pressed")
-//        secondLAbel.text = "text Changed"
-//    }
-    
+            
     func configureViewComponents(text : String){
             receivedText = text
         }
